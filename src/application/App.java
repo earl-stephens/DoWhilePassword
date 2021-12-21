@@ -12,15 +12,15 @@ public class App {
 		 * or output Enter password if the wrong password is entered
 		 */
 		
-		final String password = "secure";
+		final String PASSWORD = "secure";
 		
 		Scanner scanner = new Scanner(System.in);
-		String userInput;
+		String userInput = null;
 		
 		do {
 			System.out.println("Enter your password: ");
 			userInput = scanner.nextLine();
-		} while(!userInput.equals(password));
+		} while(!userInput.equals(PASSWORD));
 		
 		System.out.println("Access granted");
 		scanner.close();
